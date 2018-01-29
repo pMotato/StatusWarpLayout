@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    android:orientation="vertical"
+    tools:context="com.yich.layout.example.MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_green_dark">
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/style"
+            android:layout_width="wrap_content"
+            android:text="page style:"
+            android:textSize="17dp"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/style"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/de_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="deafult" />
+
+            <RadioButton
+                android:id="@+id/custom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="custom" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/lay1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="end status:"
+        android:textSize="17dp"
+        android:layout_below="@+id/style"
+        />
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/status"
+        android:layout_height="wrap_content"
+        app:ms_multiline="false"
+        app:ms_enableFloatingLabel="false"
+        app:ms_enableErrorLabel="false"
+        app:ms_floatingLabelText="floating label"
+    />
+    </LinearLayout>
+    </RelativeLayout>
+<com.yich.libary.layout.StatusWrapLayout
+    android:id="@+id/maskLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/fun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="process data "
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+</com.yich.libary.layout.StatusWrapLayout>
+
+</LinearLayout>
