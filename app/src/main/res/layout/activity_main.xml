@@ -77,6 +77,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+<TextView
+    android:textSize="30sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="this is content!!!"
+    android:layout_centerInParent="true"
+    android:textColor="@android:color/black"/>
+
+
     <Button
         android:id="@+id/fun"
         android:layout_width="match_parent"
@@ -85,6 +94,8 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:text="process data "
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
         android:textColor="@android:color/black"
         android:textSize="20sp" />
 </com.yich.libary.layout.StatusWrapLayout>
