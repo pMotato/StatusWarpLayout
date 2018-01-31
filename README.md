@@ -16,44 +16,41 @@ and  this all is easy to use.
 
 ### Usage
 #### get it
- `dependencies {
-          compile 'com.yich.libary.layout:statuswraplayout:1.0.2'
-  } `
+     `dependencies {
+  	     compile 'com.yich.libary.layout:statuswraplayout:1.0.2'
+    }`
 
 #### use
 
 **first**
  use  it in layout xml
- `<com.yich.libary.layout.StatusWrapLayout
 
+    `<com.yich.libary.layout.StatusWrapLayout
       android:id="@+id/maskLay"
       android:layout_width="match_parent"
       android:layout_height="match_parent">
-
-  <TextView
-
+    <TextView
       android:textSize="30sp"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="this is content!!!"
       android:layout_centerInParent="true"
-      android:textColor="@android:color/black"/>
-
-  </com.yich.libary.layout.StatusWrapLayout>`
+      android:textColor="@android:color/black"/></com.yich.libary.layout.StatusWrapLayout>`
 
 **second**
 
  in your java code
 when u are  loading data u can use showLoading (and more others status ,please refer to  other api)
-`       // befor process data show loading status
-         mStatusWrapLayout.showLoading(null);
+
+      // befor process data show loading status
+       `       mStatusWrapLayout.showLoading(null);
 `
 #### Advanced Features
 when there are default statu can  not satisfy your requirement,u can use custom status view to wrap your page.
 u first create your custom status view must implement IStatusView
 
-`public interface IStatusView {
 
+    `public interface IStatusView {
      /**
       * init view
       */
@@ -88,15 +85,13 @@ u first create your custom status view must implement IStatusView
        * @param listener user click current status view listener
       * @param param  input params
       */
-     public void updataStatusView(OnUserClickListener listener, Object... param);
- }
+     public void updataStatusView(OnUserClickListener listener, Object... param);}
 `
 
 then u can easily add your status view to StatusWrapLayout by this code
+change to your custome view
 
-`//change to your custome view
-
-              StatusWrapLayout.Builder builder=new StatusWrapLayout.Builder();
+              `StatusWrapLayout.Builder builder=new StatusWrapLayout.Builder();
               //change interest status  to replace this status view
               builder.setLoadingView(new MyloadingView())
                       .setErrorView(new MyErrorView())
