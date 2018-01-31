@@ -9,11 +9,11 @@ import com.yich.libary.layout.StatusWrapLayout;
 /**
  * Created by yich on 2018/1/19.
  * 2016928168@qq.com
- * 各种状态view的生命周期
+ * view status
  * {
- *     emptyview，
- *     errorview，
- *     loadingview，
+ *     emptyview,
+ *     errorview,
+ *     loadingview,
  *     othersView
  *
  * }

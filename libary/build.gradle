@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.novoda.bintray-release'
 android {
     compileSdkVersion 26
-
+    buildToolsVersion "26.0.0"
 
 
     defaultConfig {
@@ -19,11 +19,25 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
+
 
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+}
+
+//添加 上传配置
+publish {
+    userOrg = 'yich'//bintray.com用户名
+    groupId = 'com.yich.libary.layout'//jcenter上的路径
+    artifactId = 'statuswraplayout'//项目名称 和你在jecter的项目名字必须一样
+    publishVersion = '1.0.2'//版本号
+    desc = 'ui lib to wrap your ui page in  variety of state'//
+    website = 'https://github.com/yuqiyich/StatusWarpLayout'//尽量模拟github上的地址，例如我这样的；当然你有地址最好
 }

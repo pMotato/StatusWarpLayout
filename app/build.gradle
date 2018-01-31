@@ -1,11 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+
     compileSdkVersion 26
+    buildToolsVersion "26.0.0"
     defaultConfig {
+
         applicationId "com.yich.layout.statuswarplayoutdemo"
         minSdkVersion 15
-        targetSdkVersion 26
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
     }
@@ -15,12 +18,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
-     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(':libary')
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.github.ganfra:material-spinner:2.0.0'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':libary')
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.github.ganfra:material-spinner:2.0.0'
     compile 'com.wang.avi:library:2.1.3'
 }

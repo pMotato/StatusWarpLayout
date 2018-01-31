@@ -68,7 +68,7 @@ public  class StatusWrapLayout extends RelativeLayout  {
 
     /**
      * defaut status Views Provider call method to easy show empty
-     * if u define custome empty view ,u may call {@method  showEmpty( OnUserClickListener listener,  Object... param)} will be better, or u  define class  which extends StatusWrapLayout to DIY;
+     * if u define custome empty view ,u may call {@link #showEmpty( OnUserClickListener listener,  Object... param)}  will be better, or u  define class  which extends StatusWrapLayout to DIY;
      * @param onretryListener  user click retry call back
      * @param tipText  tip
      * @param retryBtnText  click text
@@ -91,7 +91,7 @@ public  class StatusWrapLayout extends RelativeLayout  {
 
     /**
      * defaut status Views Provider call method to easy show error view
-     * if u define custome empty view ,u may call {@method  showError( OnUserClickListener listener,  Object... param)} will be better, or u  define class  which extends StatusWrapLayout to DIY;
+     * if u define custome empty view ,u may call {@link #showError(OnUserClickListener listener,  Object... param)} will be better, or u  define class  which extends StatusWrapLayout to DIY;
      * @param tipText  tip
      * @param btnText  click text
      * @param drawableResId  error drawable res id
@@ -112,7 +112,7 @@ public  class StatusWrapLayout extends RelativeLayout  {
 
     /**
      * defaut status Views Provider call method to easy show other view
-     * if u define custome empty view ,u may call {@method  showOther( OnUserClickListener listener,  Object... param)} will be better, or u  define class  which extends StatusWrapLayout to DIY;
+     * if u define custome empty view ,u may call {@link #showOther(OnUserClickListener listener,  Object... param)} will be better, or u  define class  which extends StatusWrapLayout to DIY;
      * @param tipText  tip
      * @param btnText  click text
      * @param drawableResId  error drawable res id
@@ -132,7 +132,7 @@ public  class StatusWrapLayout extends RelativeLayout  {
 
     /**
      * defaut status Views Provider call method to easy show loading view
-     * if u define custome empty view ,u may call {@method  showLoading( OnUserClickListener listener,  Object... param)} will be better, or u  define class  which extends StatusWrapLayout to DIY;
+     * if u define custome empty view ,u may call {@link #showLoading(OnUserClickListener listener,  Object... param)} will be better, or u  define class  which extends StatusWrapLayout to DIY;
      * @param tipText  tip
      * @param onretryListener
      */
