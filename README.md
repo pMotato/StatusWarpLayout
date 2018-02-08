@@ -1,4 +1,4 @@
-# StatusWrapLayout
+# StatusWrapLayout【[Chinese](https://github.com/yuqiyich/StatusWarpLayout/blob/master/docs/README-zh.md)】
 **ui library to wrap your page to  handle different states(like error,empty,others)**
 
 ### feature
