@@ -34,10 +34,10 @@ dependencies {
 
 //添加 上传配置
 publish {
-    userOrg = 'yich'//bintray.com用户名
+    userOrg = 'yichgo'//bintray.com用户名
     groupId = 'com.yich.libary.layout'//jcenter上的路径
     artifactId = 'statuswraplayout'//项目名称 和你在jecter的项目名字必须一样
-    publishVersion = '1.0.2'//版本号
+    publishVersion = '1.0.3'//版本号
     desc = 'ui lib to wrap your ui page in  variety of state'//
     website = 'https://github.com/yuqiyich/StatusWarpLayout'//尽量模拟github上的地址，例如我这样的；当然你有地址最好
 }
